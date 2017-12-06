@@ -1,3 +1,39 @@
+<h2> How to Configure <h2>
+
+<ul>
+   <li>#1 install  composer </li> 
+   <li>composer install</li>
+</ul>
+ 
+<ul>
+  <li> #2 Application key </li> 
+  <li> php artisan key:generate</li>
+</ul>
+  
+<ul>
+  <li><p>#3 create a .env </p></li>
+  <li>DB_CONNECTION=mysql</li>
+  <li>DB_HOST=127.0.0.1</li>
+  <li>DB_PORT=3306</li>
+  <li>DB_DATABASE=yourDATABASENAME</li>
+  <li>DB_USERNAME=yourUSERNAME</li>
+  <li>DB_PASSWORD=yourPASSWORD</li>
+</ul>
+ 
+<ul>
+   <li> #4 migrate the database structure </li>
+   <li>php artisan migrate </li>
+</ul>
+
+<ul>
+  <li>#5 you need to change the default image</li> 
+  <li>database\migrations\2017_12_04_171331_create_posts_table 
+  $table->string('file')->default('yourIMAGE.jpg');</li>
+</ul>
+
+
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
