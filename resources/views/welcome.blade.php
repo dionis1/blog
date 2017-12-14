@@ -12,7 +12,7 @@
 
         <!-- Styles -->
         <style>
-            html, body {
+            html {
                 background-color: #fff;
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
@@ -110,11 +110,12 @@
                  <hr>
                 @endforeach
                 </div>
-                
-                 {{ $posts->links() }}
-                
+
             </div>
+            
+           {{ $posts->links() }}
+          
         </div>
-        
+
     </body>
 </html>

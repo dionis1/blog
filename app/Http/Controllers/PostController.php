@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Post;
 use App\Http\Requests\EditePostRequest;
+use App\Http\Requests\CreatPostRequest;
 use App\Repositories\PostRepository;
 use Illuminate\Support\Facades\Auth;
 
@@ -37,14 +38,14 @@ class PostController extends Controller
     
     }
 
-    public function create(Request $request){
-
+    public function create(CreatPostRequest $request){
+      /*
     	$this->validate($request,[
             "title" => "required",
             "post" => "required"
             
        ]);
-
+       */
     	/*$post = new Post($request->all());*/
 
       $post = new Post();

@@ -98,6 +98,11 @@ return [
     | specify a specific custom language line for a given attribute rule.
     |
     */
+    'custom' => [
+        'file' => [
+            'mimes' => "The image is not jepg,png,jpg .",
+        ]
+    ],
 
     'custom' => [
         'attribute-name' => [

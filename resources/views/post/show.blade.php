@@ -45,7 +45,7 @@
     {{ csrf_field() }}
          <input type="hidden" value="{{ \Auth::user()->name }}" name="user_name"/>
          <input type="hidden" value="{{ $post->id }}" name="post_id"/>     
-         <textarea name="body" placeholder="ADD your Comment"></textarea>
+         <textarea style="width:600px; height: 100px;" placeholder="ADD your Comment"></textarea>
          <button type="submit">Add comment</button>
    </form>
    <button><a href="{{ url('/post') }}">Posts</a></button>
